@@ -1,3 +1,4 @@
-# First Chapter
+# 1. Getting Started
 
-GitBook allows you to organize your book into chapters, each chapter is stored in a separate file like this one.
+In this chapter we will cover how to get started with Javascript. How to run it and test it.
+

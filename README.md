@@ -1,3 +1,8 @@
-# My Awesome Book
+# Blocks of Javascript
 
-This file file serves as your book's preface, a great place to describe your book's content and ideas.
+### A Complete Javascript Primer
+
+This book should be a comprehensive reference manual for learning Javascript. It should also appeal to those who already know the language. and want to brush upon some topics.
+
+
+
