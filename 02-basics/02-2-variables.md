@@ -28,7 +28,7 @@ In computer programming, variables work similarly.
 
 ### 2.2.1 Declaring and Using Variables
 
-The way to declare and store data in variables, and use them is as follows - 
+The way to declare and store data in variables, and use them is as follows -
 
 ```js
 var a = 10;
@@ -37,13 +37,13 @@ var c = b - a;
 console.log(c); // Output: 1
 ```
 
-**NOTE the usage of the operator `=` here. It works as 'assignment' operator in Javascript \(and most other programming langauges\). `var a = 10` means, in english - "**_**Let the value of a be 10**_**", and not the statement **~~**"**_**The variable a is equal to 10**_**"**~~
+**NOTE the usage of the operator **`=`** here. It works as 'assignment' operator in Javascript \(and most other programming langauges\). **`var a = 10`** means, in english - "**_**Let the value of a be 10**_**", and not the statement **~~**"**_**The variable a is equal to 10**_**"**~~
 
 #### 2.2.1.1 Mutability
 
 The mutability of a variable says whether we can change the value of a  variable once it has been declared. There are 3 variable declaration keywords - `var`, `let` and `const`
 
-And this how `var` and `let` work. 
+And this how `var` and `let` work.
 
 ```js
 var a = 10;
@@ -52,9 +52,9 @@ let b = 20;
 b = 0; // value can be changed
 ```
 
-It may appear to not be any different, but `var` and `let` have different scopes \(we are soon going to cover that\). 
+It may appear to not be any different, but `var` and `let` have different scopes \(we are soon going to cover that\).
 
-And this is how `const` works - 
+And this is how `const` works -
 
 ```js
 const k = 123;
