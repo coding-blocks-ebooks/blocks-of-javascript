@@ -28,5 +28,6 @@ window.prompt("Enter Something");
 
 You'll whatever you type into the prompt dialog, get's printed on the console.
 
-![](/assets/Screen Shot 2017-05-21 at 3.36.59 AM.png)![](/assets/Screen Shot 2017-05-21 at 3.37.09 AM.png)
+![](/assets/01-2-input-1.png)
+![](/assets/01-2-input-2.png)
 
