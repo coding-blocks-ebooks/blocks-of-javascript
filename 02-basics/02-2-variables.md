@@ -37,7 +37,7 @@ var c = b - a;
 console.log(c); // Output: 1
 ```
 
-**NOTE the usage of the operator **`=`** here. It works as 'assignment' operator in Javascript \(and most other programming langauges\). **`var a = 10`** means, in english - "**_**Let the value of a be 10**_**", and not the statement **~~**"**_**The variable a is equal to 10**_**"**~~
+**NOTE the usage of the operator **`=`** here. It works as 'assignment' operator in Javascript \(and most other programming langauges\). **`var a = 10`** means, in english - "**_**Let the value of a be 10**_**", and not the statement ~~"The variable a is equal to 10"~~
 
 #### 2.2.1.1 Mutability
 
@@ -61,5 +61,26 @@ const k = 123;
 k = 0; // Error: Because we cannot change value of const.
 ```
 
+### 2.2.2 References
 
+When we create a variable, we have a LHS (Left Hand Side) and a RHS (Right Hand Side). The LHS is the _name of the variable_, and the RHS is the _data contained in the variable_. (In computer science, those are technically called l-value and r-value in fact).
+Whenever we write something like `myVar = 10`, we are reassigning the LHS to point to a new RHS.
 
+In Javascript the assignment statements are **value-copy** and not **reference-copy** type.   
+
+```js
+var a = 10;
+var b = a;
+b++;
+console.log(b); // 11
+console.log(a); // 10 (not 11)
+```
+
+In line no. 2 in the snippet above, `b = a`, here's what happens : -
+ - Interpreter looks at RHS. Finds `a`
+ - Interpreter finds out the _value of `a`_ (i.e. 10)
+ - Interpreter assigns this **value** to the LHS, which is `b`
+ - Now `b` contains the value `10`, and `a` contains the value `10`
+ - At this point, after execution of this line, there is no relationship between b and a anymore.
+
+**This behaviour holds true only for variables that have data like `number`, `string` or `boolean`. For other data types like objects and arrays, assignments are reference-copy, and not value-copy. We will see this later.** 
