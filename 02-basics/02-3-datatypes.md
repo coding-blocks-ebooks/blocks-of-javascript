@@ -72,7 +72,7 @@ console.log(typeof a) //"string"
 ```
 
 {% hint style='working' %}
-NOTE that 
+NOTE that **_values_** always have types. 10 is number. 'hello' is string. Being loosely typed means the variable (i.e. the LHS) has no type strictly defined. That is a container 'a' which contained the value 10, can at some point of time in future contain the value 'hello'. Thus, the container 'a' does not constrain itself from containing any type of data.
 {% endhint %}
 
 
