@@ -36,8 +36,9 @@ var b = 11;
 var c = b - a;
 console.log(c); // Output: 1
 ```
-
-**NOTE the usage of the operator **`=`** here. It works as 'assignment' operator in Javascript \(and most other programming langauges\). **`var a = 10`** means, in english - "**_**Let the value of a be 10**_**", and not the statement ~~"The variable a is equal to 10"~~
+{% hint style='working' %}
+NOTE the usage of the operator **`=`** here. It works as 'assignment' operator in Javascript \(and most other programming langauges\). **`var a = 10`** means, in english - **_**"Let the value of a be 10"**_**, and not the statement ~~"The variable a is equal to 10"~~
+{% endhint %}
 
 #### 2.2.1.1 Mutability
 
@@ -83,4 +84,6 @@ In line no. 2 in the snippet above, `b = a`, here's what happens : -
  - Now `b` contains the value `10`, and `a` contains the value `10`
  - At this point, after execution of this line, there is no relationship between b and a anymore.
 
-**This behaviour holds true only for variables that have data like `number`, `string` or `boolean`. For other data types like objects and arrays, assignments are reference-copy, and not value-copy. We will see this later.** 
+{% hint style='danger' %}
+This behaviour holds true only for variables that have data like `number`, `string` or `boolean`. For other data types like objects and arrays, assignments are reference-copy, and not value-copy. We will see this later
+{% endhint %}
