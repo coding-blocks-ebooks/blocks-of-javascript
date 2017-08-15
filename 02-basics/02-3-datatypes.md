@@ -28,5 +28,37 @@ In Javascript we have following datatypes -
 
 | Data Type | Description | Examples |
 | :--- | :--- | :--- |
-| **number** | Any numerical value. Does not distinguish between whole numbers and fractions | 1 43.22  |
-| **string** |  |  |
+| **number** | Any numerical value. Does not distinguish between whole numbers and fractions | 1, 43.22, -0.5 |
+| **string** | Any array of characters, \(JS by default supports UTF-8 charset, so all characters of a string must in UTF-8\). There is no _character_ datatype, so single characters are also strings | "hello", "a", "wow !", "this is str 2" |
+| **boolean** | A value which is either _**true**_ or _**false**_ | true, false |
+| **undefined** | A special datatype in Javascript for 'undefined' data. An undefined type basically means there is no data in it. It is similar \(but not exactly same\) to 'void' datatype in C-like programming languages | undefined |
+| **function** | In Javascript functions themselves are first-class objects. So a function is also a variable. The type of such variables which are functions is _**function**_ | function a \(\) {return "a"} |
+| **object** | Pretty much everything that can be classified into any of the above datatypes, is an object. All types extend from the _object_ type in Javascript. Arrays and _null_ are also of the type object | {a: 10, b:20},   \[1,3,4\] |
+
+### 2.3.3 Finding Datatype of object in Javscript
+
+We can find the data type of an object in Javascript using the  `typeof` operator. 
+
+```js
+var a = 10, 
+    b = 'str', 
+    c = [3,4,1], 
+    d = {P:1, Q:2}, 
+    e = null, 
+    f = false,
+    g = function () { return 0} ;
+
+console.log(typeof a) // "number"
+console.log(typeof b) // "string"
+console.log(typeof c) // "object"
+console.log(typeof d) // "object"
+console.log(typeof e) // "object"
+console.log(typeof f) // "boolean"
+console.log(typeof g) // "function"
+console.log(typeof undefined) // "undefined"
+
+
+```
+
+
+
