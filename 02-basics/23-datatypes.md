@@ -28,5 +28,5 @@ In Javascript we have following datatypes -
 
 | Data Type | Description | Examples |
 | :--- | :--- | :--- |
-| **number** | Any numerical value. Does not distinguish between whole numbers and fractions | 1<br>43.22  |
+| **number** | Any numerical value. Does not distinguish between whole numbers and fractions | 1 43.22  |
 | **string** |  |  |
