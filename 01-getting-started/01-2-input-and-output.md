@@ -26,7 +26,7 @@ Taking input from the user in the browser is possible through _prompts_.
 window.prompt("Enter Something");
 ```
 
-You'll whatever you type into the prompt dialog, get's printed on the console.
+Whatever you'll type into the prompt dialog, get's printed on the console.
 
 ![](/assets/01-2-input-1.png)
 ![](/assets/01-2-input-2.png)
