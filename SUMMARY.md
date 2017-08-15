@@ -8,4 +8,7 @@
   * [2.1 Common Syntax](02-basics/02-1-common-syntax.md)
   * [2.2 Variables](02-basics/02-2-variables.md)
   * [2.3 Datatypes](02-basics/02-3-datatypes.md)
-  * [2.4 Datatypes](02-basics/02-4-equality.md)
+  * [2.4 Equality](02-basics/02-4-equality.md)
+
+
+
