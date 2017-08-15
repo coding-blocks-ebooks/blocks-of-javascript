@@ -37,7 +37,7 @@ var c = b - a;
 console.log(c); // Output: 1
 ```
 {% hint style='working' %}
-NOTE the usage of the operator **`=`** here. It works as 'assignment' operator in Javascript \(and most other programming langauges\). **`var a = 10`** means, in english - **_**"Let the value of a be 10"**_**, and not the statement ~~"The variable a is equal to 10"~~
+NOTE the usage of the operator **`=`** here. It works as 'assignment' operator in Javascript \(and most other programming langauges\). **`var a = 10`** means, in english - _**"Let the value of a be 10"**_, and not the statement ~~"The variable a is equal to 10"~~
 {% endhint %}
 
 #### 2.2.1.1 Mutability

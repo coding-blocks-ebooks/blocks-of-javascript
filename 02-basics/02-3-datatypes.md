@@ -35,9 +35,9 @@ In Javascript we have following datatypes -
 | **function** | In Javascript functions themselves are first-class objects. So a function is also a variable. The type of such variables which are functions is _**function**_ | function a \(\) {return "a"} |
 | **object** | Pretty much everything that can be classified into any of the above datatypes, is an object. All types extend from the _object_ type in Javascript. Arrays and _null_ are also of the type object | {a: 10, b:20},   \[1,3,4\] |
 
-### 2.3.3 Finding Datatype of object in Javscript
+#### 2.3.2.1 Finding Datatype of object in Javscript
 
-We can find the data type of an object in Javascript using the  `typeof` operator. 
+We can find the data type of an object in Javascript using the  `typeof` operator.
 
 ```js
 var a = 10, 
@@ -56,9 +56,24 @@ console.log(typeof e) // "object"
 console.log(typeof f) // "boolean"
 console.log(typeof g) // "function"
 console.log(typeof undefined) // "undefined"
-
-
 ```
+
+#### 2.3.2.2 Type _"strictness"_ in Javascript
+
+While _data_ has type in Javascript, the variables do not enforce types strictly. Which makes Javascript a **loosely typed** language. 
+
+What this essentially means is that unlike languages like C/C++ or Java, where writing `int a = 10` makes `a` an integer variable, and in future you cannot write something like `a = false` to assign a boolean to it , in Javascript, doing something similar is perfectly valid. 
+
+```js
+var a = 10;
+console.log(typeof a) //"number"
+a = "hello there"
+console.log(typeof a) //"string" 
+```
+
+{% hint style='working' %}
+NOTE that 
+{% endhint %}
 
 
 
