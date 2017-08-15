@@ -30,7 +30,6 @@ In Javascript we have following datatypes -
 | :--- | :--- | :--- |
 | **number** | Any numerical value. Does not distinguish between whole numbers and fractions | 1  |
 |  |  |  |
-|  |  |  |
 
 
 
