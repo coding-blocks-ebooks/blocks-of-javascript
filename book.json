@@ -1,7 +1,8 @@
 {
   "plugins": [
     "json",
-    "hints"
+    "hints",
+    "katex"
   ],
   "pluginsConfig": {
     "json": {
