@@ -13,12 +13,12 @@ $$
 Trivially we can see that **x** and **y** might be **3** and **2**, but if we had to formally solve this, we can proceed so forth.
 
 $$
-\begin{align}
+\begin{aligned}
 x + y = 5; &\ x - y = 1 \\
 &=> (x + y) + (x - y) = 5 + 1 \\
 &=> 2x = 6 \\
 &=> x = 3
-\end{align}
+\end{aligned}
 $$
 
 ```
