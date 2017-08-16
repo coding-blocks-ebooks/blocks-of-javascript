@@ -1,8 +1,7 @@
 {
   "plugins": [
     "json",
-    "hints",
-    "mathjax"
+    "hints"
   ],
   "pluginsConfig": {
     "json": {
