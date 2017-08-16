@@ -2,7 +2,7 @@
   "plugins": [
     "json",
     "hints",
-    "mathjax"
+    "katex"
   ],
   "pluginsConfig": {
     "json": {
