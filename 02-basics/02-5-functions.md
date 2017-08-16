@@ -10,7 +10,7 @@ $$f(x,y) = x^2 + y^2$$
 
 This would imply that for values 3 and 4 of **x **and **y** respectively, **k ** would be 25.
 
-A similar result can be achieved in Javascript using the following syntax: 
+A similar result can be achieved in Javascript using the following syntax:
 
 ```js
 function f (x,y) {
@@ -22,11 +22,11 @@ var k = f(3,4)
 console.log(k) // 25
 ```
 
-The syntax to define a function is like this `function funName (arg1, arg2) { /* body */ }`  
+The syntax to define a function is like this `function funName (arg1, arg2) { /* body */ }`
 
 ### 2.5.1 Function return types
 
-In many languages, functions must have a strictly defined return type. Since Javascript is loosely typed, and we cannot enforce types on variables, thus functions do not have a return type. Which leads us to write code like this - 
+In many languages, functions must have a strictly defined return type. Since Javascript is loosely typed, and we cannot enforce types on variables, thus functions do not have a return type. Which leads us to write code like this -
 
 ```js
 function add (a, b) {

@@ -4,7 +4,9 @@ The concept of variables is primary to most programming languages. There are har
 
 Consider the following  mathematical equations - 
 
-$$x + y = 5 \\x - y = 1 $$
+$$
+x + y = 5\\x - y = 1
+$$
 
 Trivially we can see that **x** and **y** might be **3** and **2**, but if we had to formally solve this, we can proceed so forth.
 
