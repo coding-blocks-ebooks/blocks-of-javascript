@@ -2,7 +2,8 @@
   "plugins": [
     "json",
     "hints",
-    "mathjax-commonhtml"
+    "mathjax-commonhtml",
+    "youtube"
   ],
   "pluginsConfig": {
     "json": {
