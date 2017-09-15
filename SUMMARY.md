@@ -10,6 +10,6 @@
   * [2.3 Datatypes](02-basics/02-3-datatypes.md)
   * [2.4 Equality](02-basics/02-4-equality.md)
   * [2.5 Functions](02-basics/02-5-functions.md)
-
+* [3. Strings](03-strings/intro.md)
 
 
