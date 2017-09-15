@@ -45,5 +45,9 @@ let speech = "He said, \" I am Iron Man\""
 
 ## 3.3 Template Strings 
 
+{% hint style='working' %}
+Note: This is something that was introduced in ECMAScript 2015, so you'd need browsers / NodeJS editions released mostly after mid-2016 for these to work.
+{% endhint %}
+
 
 
