@@ -16,7 +16,7 @@ let oString = 'this is other string'
 
 
 
-## 3.2 Excape Notation
+## 3.2 Escape Notation
 
 Besides normal characters we can use in a string, some characters, which are either not printable, or not 'type'able can be put into a string using `\` \(backward slash\) escape sequences.   
 
