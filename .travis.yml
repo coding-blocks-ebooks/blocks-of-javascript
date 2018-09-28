@@ -13,9 +13,9 @@ addons:
       - xvfb
 before_install:
   - npm install -g gitbook-cli
-  - mkdir -p $HOME/bin
-  - sudo echo "xvfb-run /usr/bin/ebook-convert" > $HOME/bin/ebook-convert
-  - sudo chmod a+x $HOME/bin/ebook-convert
+  - echo '#!/bin/bash' >> $HOME/bin/ebook-convert
+  - echo 'xvfb-run /usr/bin/ebook-convert "$@"' >> $HOME/bin/ebook-convert
+  - chmod a+x $HOME/bin/ebook-convert
 install:
   - gitbook install
   - echo ""
