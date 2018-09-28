@@ -22,6 +22,10 @@ install:
 script:
   - gitbook build
   - gitbook pdf
+  - gitbook epub
+  - gitbook mobi
+after_success:
+  - mv book.* _book/
 deploy:
   provider: pages
   skip-cleanup: true
