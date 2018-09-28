@@ -10,10 +10,14 @@ addons:
     update: true
     packages:
       - calibre
+      - xvfb
 before_install:
   - npm install -g gitbook-cli
+  - sudo echo "xvfb-run /usr/bin/ebook-convert" > /usr/local/bin/ebook-convert
+  - sudo chmod a+x /usr/local/bin/ebook-convert
 install:
   - gitbook install
+  - echo ""
 script:
   - gitbook build
   - gitbook pdf
