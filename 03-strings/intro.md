@@ -3,11 +3,11 @@
 {% youtube src="https://www.youtube.com/watch?v=qGQmj86A3q4" %}
 {% endyoutube %}
 
-A `string` in Javascript is, simply put, a sequence of characters. 
+A `string` in Javascript is, simply put, a sequence of characters.
 
-## 3.1 Declaring Strings
+### 3.0.1 Declaring Strings
 
-We can declare strings just like any other variables. We can use either single quote `'` or double quote `"` \(they are completely interchangable\). 
+We can declare strings just like any other variables. We can use either single quote `'` or double quote `"` \(they are completely interchangable\).
 
 ```
 let aString = "this is a string"
@@ -16,7 +16,7 @@ let oString = 'this is other string'
 
 
 
-## 3.2 Escape Notation
+### 3.0.2 Escape Notation
 
 Besides normal characters we can use in a string, some characters, which are either not printable, or not 'type'able can be put into a string using `\` \(backward slash\) escape sequences.   
 
@@ -39,15 +39,22 @@ Besides normal characters we can use in a string, some characters, which are eit
 
 An example, if you want to use this as a string - `He said, "I am Iron Man"`you can declare it as follows
 
-```
+```js
 let speech = "He said, \" I am Iron Man\""
 ```
 
-## 3.3 Template Strings 
+### 3.0.3 Template Strings
 
 {% hint style='working' %}
 Note: This is something that was introduced in ECMAScript 2015, so you'd need browsers / NodeJS editions released mostly after mid-2016 for these to work.
 {% endhint %}
 
+Template strings allow you to use variables inside strings without having to use the ugly `"a" + b + "c"` type of notation.
+Take an example here  -
 
-
+```js
+let firstName = "Arnav"
+let lastName = "Gupta"
+let bookName = "Blocks of Javascript, by ${lastName}, ${firstName}"
+console.log(bookName) // "Blocks of Javascript, by Gupta, Arnav"
+```

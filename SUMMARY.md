@@ -11,5 +11,5 @@
   * [2.4 Equality](02-basics/02-4-equality.md)
   * [2.5 Functions](02-basics/02-5-functions.md)
 * [3. Strings](03-strings/intro.md)
-
-
+  * [3.1 Search and Compare](03-strings/03-1-search-and-compare.md)
+  * [3.2 Extraction and Splitting](03-strings/03-2-extraction-and-splitting.md)
