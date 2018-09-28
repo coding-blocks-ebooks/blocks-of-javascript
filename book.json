@@ -1,0 +1,53 @@
+[
+  {
+    "path": "03-strings/03-2-extraction-and-splitting.md"
+  },
+  {
+    "path": "03-strings/03-1-search-and-compare.md"
+  },
+  {
+    "title": "3. Strings",
+    "heading": "h1",
+    "content": "\n<p><img src=\"http://img.youtube.com/vi/\n/0.jpg\" alt=\"YouTube video thumbnail\" /><p><a href=\"http://youtube.com/watch?v=\n\">Video link</p></a></p>\n<p>A <code>string</code> in Javascript is, simply put, a sequence of characters.</p>\n<h3>3.0.1 Declaring Strings</h3>\n<p>We can declare strings just like any other variables. We can use either single quote <code>&#39;</code> or double quote <code>&quot;</code> (they are completely interchangable).</p>\n<pre><code>let aString = &quot;this is a string&quot;\nlet oString = &#39;this is other string&#39;\n</code></pre><h3>3.0.2 Escape Notation</h3>\n<p>Besides normal characters we can use in a string, some characters, which are either not printable, or not &#39;type&#39;able can be put into a string using <code>\\</code> (backward slash) escape sequences.   </p>\n<table>\n<thead>\n<tr>\n<th style=\"text-align:left\">Code</th>\n<th style=\"text-align:left\">Output</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td style=\"text-align:left\"><code>\\0</code></td>\n<td style=\"text-align:left\">the NULL character</td>\n</tr>\n<tr>\n<td style=\"text-align:left\"><code>\\&#39;</code></td>\n<td style=\"text-align:left\">single quote</td>\n</tr>\n<tr>\n<td style=\"text-align:left\"><code>\\&quot;</code></td>\n<td style=\"text-align:left\">double quote</td>\n</tr>\n<tr>\n<td style=\"text-align:left\"><code>\\\\</code></td>\n<td style=\"text-align:left\">backslash</td>\n</tr>\n<tr>\n<td style=\"text-align:left\"><code>\\n</code></td>\n<td style=\"text-align:left\">new line</td>\n</tr>\n<tr>\n<td style=\"text-align:left\"><code>\\r</code></td>\n<td style=\"text-align:left\">carriage return</td>\n</tr>\n<tr>\n<td style=\"text-align:left\"><code>\\v</code></td>\n<td style=\"text-align:left\">vertical tab</td>\n</tr>\n<tr>\n<td style=\"text-align:left\"><code>\\t</code></td>\n<td style=\"text-align:left\">tab</td>\n</tr>\n<tr>\n<td style=\"text-align:left\"><code>\\b</code></td>\n<td style=\"text-align:left\">backspace</td>\n</tr>\n<tr>\n<td style=\"text-align:left\"><code>\\f</code></td>\n<td style=\"text-align:left\">form feed</td>\n</tr>\n<tr>\n<td style=\"text-align:left\"><code>\\uXXXX</code></td>\n<td style=\"text-align:left\">unicode codepoint</td>\n</tr>\n<tr>\n<td style=\"text-align:left\"><code>\\u{X}</code> ... <code>\\u{XXXXXX}</code></td>\n<td style=\"text-align:left\">unicode codepoint</td>\n</tr>\n<tr>\n<td style=\"text-align:left\"><code>\\xXX</code></td>\n<td style=\"text-align:left\">the Latin-1 character</td>\n</tr>\n</tbody>\n</table>\n<p>An example, if you want to use this as a string - <code>He said, &quot;I am Iron Man&quot;</code>you can declare it as follows</p>\n<pre><code class=\"lang-js\">let speech = &quot;He said, \\&quot; I am Iron Man\\&quot;&quot;\n</code></pre>\n<h3>3.0.3 Template Strings</h3>\n<p><div class=\"alert alert-warning hints-alert\"><div class=\"hints-icon\"><i class=\"fa fa-wrench\"></i></div><div class=\"hints-container\"><p>Note: This is something that was introduced in ECMAScript 2015, so you&#39;d need browsers / NodeJS editions released mostly after mid-2016 for these to work.</p>\n</div></div></p>\n<p>Template strings allow you to use variables inside strings without having to use the ugly <code>&quot;a&quot; + b + &quot;c&quot;</code> type of notation.\nTake an example here  -</p>\n<pre><code class=\"lang-js\">let firstName = &quot;Arnav&quot;\nlet lastName = &quot;Gupta&quot;\nlet bookName = &quot;Blocks of Javascript, by ${lastName}, ${firstName}&quot;\nconsole.log(bookName) // &quot;Blocks of Javascript, by Gupta, Arnav&quot;\n</code></pre>\n",
+    "path": "03-strings/intro.md"
+  },
+  {
+    "path": "02-basics/02-5-functions.md"
+  },
+  {
+    "path": "02-basics/02-4-equality.md"
+  },
+  {
+    "path": "02-basics/02-3-datatypes.md"
+  },
+  {
+    "path": "02-basics/02-2-variables.md"
+  },
+  {
+    "path": "02-basics/02-1-common-syntax.md"
+  },
+  {
+    "title": "2. Basics and Syntax",
+    "heading": "h1",
+    "content": "\n<p>When learning any language (be it a programming language or a literary one), we must start with the <strong>grammar, </strong>i.e. the rules that govern with. And for that, we must know what the building blocks of that language are.</p>\n<p>Drawing an analogy from a literary language (English) and a programming language (Javascript), we can say the following -</p>\n<table>\n<thead>\n<tr>\n<th style=\"text-align:left\">English</th>\n<th style=\"text-align:left\">Javascript</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td style=\"text-align:left\">Story</td>\n<td style=\"text-align:left\">Software/App</td>\n</tr>\n<tr>\n<td style=\"text-align:left\">Chapter</td>\n<td style=\"text-align:left\">Program/Script</td>\n</tr>\n<tr>\n<td style=\"text-align:left\">Paragraph</td>\n<td style=\"text-align:left\">Function</td>\n</tr>\n<tr>\n<td style=\"text-align:left\">Sentence</td>\n<td style=\"text-align:left\">Statement</td>\n</tr>\n<tr>\n<td style=\"text-align:left\">Word</td>\n<td style=\"text-align:left\">Token</td>\n</tr>\n<tr>\n<td style=\"text-align:left\">Alphabet</td>\n<td style=\"text-align:left\">Character</td>\n</tr>\n</tbody>\n</table>\n<p>Going up the chain, let&#39;s see what these are -</p>\n<h4>Character</h4>\n<p>These are letters (A-Z,a-z), numbers (0-9), and special characters like !@#$%^&amp;*(), and others. Every language will have a valid set of characters which can be used to write code. Some languages support using letters of foreign languages too. For Javascript, the <em><strong>Unicode</strong></em> charater set is supported, with with various rules and reservations about which characters can or can not be used in different situations. </p>\n<h4>Token</h4>\n<p>A token is a single meaningful unit of code. There are tokens like <code>var</code> which is a keyword for declaring variables, tokens like a simple number <code>10</code> which represents the integer 10. Symbols like + - * / = are also tokens </p>\n<h4>Statement</h4>\n<p>A statement is a single unit of code that makes sense on its own. Similar to what a sentence is in literary languages, when you put tokens together into a line of code, which can be interpreted by the interpreter and some logical step gets taken, that piece of code is called a statement. Some examples are - </p>\n<p><code>var a = 10</code> which sets that value of <strong>a </strong> to 10. </p>\n<p><code>console.log(&#39;hello&#39;)</code>which prints the word <strong>hello</strong> to the screen. </p>\n<h4>Function</h4>\n<p>A collection of statements, that will execute in a given order (governed by some logic). A process of starting the execution of the statements within a function is called <em>invoking</em>, though, more colloquially, <em>calling a function</em> is correct.</p>\n",
+    "path": "02-basics/intro.md"
+  },
+  {
+    "path": "01-getting-started/01-2-input-and-output.md"
+  },
+  {
+    "path": "01-getting-started/01-1-running-javascript-code.md"
+  },
+  {
+    "title": "1. Getting Started",
+    "heading": "h1",
+    "content": "\n<p>In this chapter we will cover how to get started with Javascript. How to run it and test it.</p>\n",
+    "path": "01-getting-started/intro.md"
+  },
+  {
+    "title": "Blocks of Javascript",
+    "heading": "h1",
+    "content": "\n<h3>A Complete Javascript Primer</h3>\n<p>This book should be a comprehensive reference manual for learning Javascript. It should also appeal to those who already know the language. and want to brush upon some topics.</p>\n",
+    "path": "README.md"
+  }
+]
