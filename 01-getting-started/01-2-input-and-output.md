@@ -28,6 +28,6 @@ window.prompt("Enter Something");
 
 Whatever you'll type into the prompt dialog, get's printed on the console.
 
-![](/assets/01-2-input-1.png)
-![](/assets/01-2-input-2.png)
+![](./01-2-input-1.png)
+![](./01-2-input-2.png)
 
