@@ -24,8 +24,10 @@ script:
   - gitbook pdf
   - gitbook epub
   - gitbook mobi
-after_success:
-  - mv book.* _book/
+after_script:
+  - mv book.pdf _book/
+  - mv book.epub _book/
+  - mv book.mobi _book/
 deploy:
   provider: pages
   skip-cleanup: true
