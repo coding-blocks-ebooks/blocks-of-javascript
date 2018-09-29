@@ -20,21 +20,20 @@ before_install:
   - chmod a+x $HOME/bin/ebook-convert
 install:
   - gitbook install
-  - echo ""
 script:
   - gitbook build
   - gitbook pdf
   - gitbook epub
   - gitbook mobi
-  - mv -v ./book.pdf _book/
-  - mv -v ./book.epub _book/
-  - mv -v ./book.mobi _book/
+  - cp -fv ./book.pdf ./_book/book.pdf
+  - cp -fv ./book.epub ./_book/book.epub
+  - cp -fv ./book.mobi ./_book/book.epub
 deploy:
   - provider: pages
     skip-cleanup: true
     github-token: $GITHUB_TOKEN  # Set in the settings page of your repository, as a secure variable
     keep-history: true
-    local-dir: _book
+    local-dir: ./_book
     on:
       branch: master
   - provider: releases
