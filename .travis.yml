@@ -30,10 +30,19 @@ script:
   - mv -v ./book.epub _book/
   - mv -v ./book.mobi _book/
 deploy:
-  provider: pages
-  skip-cleanup: true
-  github-token: $GITHUB_TOKEN  # Set in the settings page of your repository, as a secure variable
-  keep-history: true
-  local-dir: _book
-  on:
-    branch: master
+  - provider: pages
+    skip-cleanup: true
+    github-token: $GITHUB_TOKEN  # Set in the settings page of your repository, as a secure variable
+    keep-history: true
+    local-dir: _book
+    on:
+      branch: master
+  - provider: releases
+    skip-cleanup: true
+    api_key: $GITHUB_TOKEN
+    file:
+      - _book/book.pdf
+      - _book/book.epub
+      - _book/book.mobi
+    on:
+      tags: true
